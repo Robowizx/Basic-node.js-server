@@ -17,5 +17,4 @@ just for beginners to get a hang of node.js
   
   you can uncomment it and use it for querying the database through your web server.
   
-  to do so you will have to run ``` npm install --save-dev mysql ``` this will install the mysql package and then you can
-  start the server.
+  to do so you will have to run ``` npm install --save-dev mysql ``` in the same folder as the files this will install the mysql package and then you can start the server.
