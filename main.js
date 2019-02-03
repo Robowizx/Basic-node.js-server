@@ -3,14 +3,15 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 
+// this is in case you want to use your mysql database
 var con = mysql.createConnection({
 	host: "localhost",
 	user: "root",
-	password: "rl!ta4Ori"
+	password: "your root user password"
 });
 con.query("use test",function(err,result){});
 
-
+//this is where we create the server and specify the different routes
 http.createServer(function(req,res){
   console.log('started');
   if(req.url == '/')
