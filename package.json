@@ -1,0 +1,14 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "testing a node.js server",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "omkar",
+  "license": "MIT",
+  "devDependencies": {
+    "mysql": "^2.16.0"
+  }
+}
