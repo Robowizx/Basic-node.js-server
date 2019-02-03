@@ -19,21 +19,13 @@ http.createServer(function(req,res){
      var stream = fs.createReadStream(__dirname+'/site.html','utf8');
      stream.pipe(res);
   } 
-  if(url.parse(req.url,true).query.name)
-  {
-    console.log('url matched');
-    var name = url.parse(req.url,true).query.name;
-    console.log('name :'+name);
-    var sql = `select status from oofficer where name='${name}'`;
-    console.log('query: '+sql);
-    con.query(sql,(err,result)=>{
-      if(err){
-        return console.error(err.message);
-      }
-      res.writeHead(200,{'Content-Type':'application/json'});
-      res.end(JSON.stringify(result));
-    });
-  }
+  /* you can create more routes here
+     ~
+     ~
+     ~
+     ~
+     ~
+  */
 }).listen(3000);
 
 
