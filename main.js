@@ -9,7 +9,6 @@ var con = mysql.createConnection({
 	user: "root",
 	password: "your root user password"
 });
-con.query("use test",function(err,result){});
 
 //this is where we create the server and specify the different routes
 http.createServer(function(req,res){
