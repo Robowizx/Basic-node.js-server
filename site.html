@@ -1,36 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Officer search</title>
+	<title> your title</title>
 </head>
 <body>
-  <h1>Officer Search</h1>
-  <form>
-  	Enter officer name:
-  	<input type="text" id="namein">
-  	<br><br>
-  	<input type="submit" value="search" onclick="request()">
-  </form>
-  <br>
-  <p id="data"></p>
-  <script type="text/javascript">
-  	function request()
-  	{
-  		var xhttp = new XMLHttpRequest();
-  		var name = document.getElementById("namein").value;
-  		var data = document.getElementById("data");
-  		var url =`search?name=${name}`;
-  		xhttp.onreadystatechange = function(){
-  			if(this.readyState == 4 && this.status == 200){
-                if(this.responseText == null)
-                	data.innerHTML = "officer not found";
-                else
-                  data.innerHTML = "officer "+this.responseText;
-  			};
-            xhttp.open("GET",url,true);
-            xhttp.send();
-  		}
-  	}
-  </script>>
+  <!-- the html you want to serve goes here-->
 </body>
 </html>
