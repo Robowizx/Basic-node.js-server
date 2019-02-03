@@ -12,3 +12,10 @@ just for beginners to get a hang of node.js
     
   4.the web server should start and you can access it on http://localhost:3000.  
        
+# extra 
+  if you want to connect a mysql database then the basic code to connect to one is given.
+  
+  you can uncomment it and use it for querying the database through your web server.
+  
+  to do so you will have to run ``` npm install --save-dev mysql ``` this will install the mysql package and then you can
+  start the server.
