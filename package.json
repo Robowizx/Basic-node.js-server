@@ -9,6 +9,5 @@
   "author": "omkar",
   "license": "MIT",
   "devDependencies": {
-    "mysql": "^2.16.0"
   }
 }
